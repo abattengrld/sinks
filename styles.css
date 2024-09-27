@@ -54,28 +54,30 @@ a {
 /*sections*/
 
 section {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 45vh 45vh;
+    grid-template-areas: 
+        "image h2"
+        "image p";
+    grid-row-gap: 5rem;
 }
 
 section img {
-    margin: 5%;
+    grid-area: image;
+    padding: 10%;
     width: 50%;
     height: auto;
-}
-
-section .text {
-    margin: 6% 5%;
-    width: 40%;
-    display: block;
+    place-self: center;
 }
 
 section h2 {
+    grid-area: h2;
     font-size: 40px;
 }
 
 section p {
+    grid-area: p;
     font-size: 20px;
     justify-content: center;
 }
