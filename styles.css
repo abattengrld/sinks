@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation*/
+
+header {
+    background-color: aquamarine;
+    padding: 1rem;
+    padding-right: 3rem;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Home*/
+
+.home {
+    height: 100vh;
+}
