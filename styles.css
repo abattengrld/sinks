@@ -13,7 +13,11 @@ header {
     background-color: aquamarine;
     padding: 1rem;
     padding-right: 3rem;
+    position: fixed;
+    width: 96%;
+    height: 5vh;
 }
+
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -30,5 +34,63 @@ a {
 /*Home*/
 
 .home {
-    height: 100vh;
+    height: 95vh;
+    text-align: center;
+    background-color: rgb(178, 144, 209);
 }
+
+.home h1{
+    padding-top: 20vh;
+    height: 20vh;
+    font-size: 100px;
+}
+
+.home p {
+    padding-bottom: 20vh;
+    height: 20vh;
+    font-size: 50px;
+}
+
+/*sections*/
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+section img {
+    margin: 5%;
+    width: 50%;
+    height: auto;
+}
+
+section .text {
+    margin: 6% 5%;
+    width: 40%;
+    display: block;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+section p {
+    font-size: 20px;
+    justify-content: center;
+}
+
+#about {
+    background-color: rgb(169, 255, 185);
+}
+
+#types {
+    background-color: rgb(243, 252, 114);
+}
+
+#features {
+    background-color: rgb(120, 126, 242);
+}
+
+
+
