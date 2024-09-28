@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +12,7 @@ html {
 /*navigation*/
 
 header {
-    background-color: aquamarine;
+    background-color: #164863;
     padding: 1rem;
     padding-right: 3rem;
     position: fixed;
@@ -25,30 +27,47 @@ header {
     list-style-type: none;
     gap: 2rem;
     font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: #0C356A;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #0C356A;
 }
 
 /*Home*/
 
 .home {
-    height: 95vh;
+    height: 100vh;
     text-align: center;
-    background-color: rgb(178, 144, 209);
+    background-color: #164863;
+    background-image: linear-gradient(180deg, #164863, #DDF2FD);
 }
 
 .home h1{
-    padding-top: 20vh;
+    padding-top: 30vh;
     height: 20vh;
     font-size: 100px;
+    color: #DDF2FD;
+    font-family: Merriweather, serif;
+    text-shadow: 2px 2px #0C356A;
 }
 
 .home p {
     padding-bottom: 20vh;
+    padding-top: 5vh;
     height: 20vh;
     font-size: 50px;
+    color: rgba(0, 51, 69, 0.715);
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px #e1eeff;
 }
 
 /*sections*/
@@ -56,43 +75,151 @@ a {
 section {
     display: grid;
     grid-template-columns: 60% 1fr;
-    grid-template-rows: 45vh 45vh;
+    grid-template-rows: 50vh 50vh;
     grid-template-areas: 
         "image h2"
         "image p";
-    grid-row-gap: 5rem;
 }
 
 section img {
     grid-area: image;
-    padding: 10%;
-    width: 50%;
-    height: auto;
     place-self: center;
+
 }
 
 section h2 {
     grid-area: h2;
-    font-size: 40px;
+    align-self: end;
+    padding-bottom: 5vh;
+    font-family: Merriweather, serif;
+    font-size: 46px;
+    width: 92%;
+    color: #213555;
+    text-shadow: 1px 1px #eaf8ff;
 }
 
 section p {
     grid-area: p;
-    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 82%;
     justify-content: center;
+    align-self: start;
+    text-align: justify;
+    color: #213555;
 }
 
 #about {
-    background-color: rgb(169, 255, 185);
+    background-color: #DDF2FD;
+}
+
+#about img {
+    width: 60%;
+    height: auto;
+    border: 7px solid #f5fdff;
+    box-shadow: 10px 10px lightblue;
+}
+
+#types img {
+    width: auto;
+    height: 70%;
+    border: 7px solid #DDF2FD;
+    box-shadow: 10px 10px rgba(85, 114, 124, 0.715);
+}
+
+#features img {
+    width: 70%;
+    height: auto;
+    border: 7px solid #f5fdff;
+    box-shadow: 10px 10px lightblue;
 }
 
 #types {
-    background-color: rgb(243, 252, 114);
+background-color: #9BBEC8;
 }
 
 #features {
-    background-color: rgb(120, 126, 242);
+    background-color: #DDF2FD;
+}
+
+.footer p {
+    text-align: end;
 }
 
 
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+
+}.box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+
+}.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 6s linear infinite;
+
+}.box div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+
+}.box div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+
+}.box div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+
+}.box div:nth-child(10) {
+    top: 20%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
 
