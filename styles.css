@@ -214,7 +214,7 @@ footer {
 }
 
 
-#hamburger-nav {
+#hamburger-icon {
     display: none;
 }
 
@@ -224,7 +224,7 @@ footer {
 }
 
 .hamburger-icon {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     height: 24px;
@@ -364,6 +364,9 @@ you are turning it into an x, or \ specifically.*/
     .nav {
         display: none;
     }
+    .hamburger-icon {
+        display: flex;
+    }
     #hamburger-nav {
         display: flex;
         justify-content: flex-end;
@@ -431,6 +434,9 @@ you are turning it into an x, or \ specifically.*/
 
     .nav {
         display: none;
+    }
+    .hamburger-icon {
+        display: flex;
     }
     #hamburger-nav {
         display: flex;
